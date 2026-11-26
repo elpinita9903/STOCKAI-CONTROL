@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  min-width: 320px;
+  background: #f7f8f5;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+::selection {
+  background: #d7f278;
+  color: #153c34;
+}
+
+@media (min-width: 1024px) and (max-height: 820px) {
+  .login-shell {
+    padding: 0.5rem;
+  }
+
+  .login-frame {
+    min-height: calc(100dvh - 1rem);
+  }
+
+  .login-promo {
+    padding-block: 1.25rem;
+  }
+
+  .login-promo-copy {
+    margin-top: 2rem;
+  }
+
+  .login-preview {
+    padding-top: 1.5rem;
+  }
+
+  .login-preview > p {
+    margin-top: 0.75rem;
+  }
+
+  .login-form-section {
+    padding-block: 1.25rem;
+  }
+
+  .login-form-heading {
+    margin-bottom: 1rem;
+  }
+
+  .login-divider {
+    margin-block: 1rem;
+  }
+
+  .login-footer {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-height: 720px) {
+  .login-shell {
+    padding: 0.25rem;
+  }
+
+  .login-frame {
+    min-height: calc(100dvh - 0.5rem);
+  }
+
+  .login-mobile-brand {
+    display: none;
+  }
+
+  .login-form-section {
+    padding-block: 0.75rem;
+  }
+
+  .login-form-heading {
+    margin-bottom: 0.75rem;
+  }
+
+  .login-divider {
+    margin-block: 0.75rem;
+  }
+
+  .login-footer {
+    margin-top: 0.75rem;
+  }
+}
